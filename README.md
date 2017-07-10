@@ -4,7 +4,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
   
 ProGeM (**Pr**ioritisation **o**f candidate causal **Ge**nes at **M**olecular QTLs) is a pipeline for the prioritisation of candidate causal genes - or mediating genes - for molecular quantitative trait loci (QTL) in an automatable fashion.
@@ -59,7 +59,7 @@ MODIFIER_impact <- c("coding_sequence_variant", "mature_miRNA_variant", "5_prime
 
 #### 2) Before you begin
 
-**2.1.** Download the "" folder containing the necessary files to run ProGeM.  Unzip this folder and place ALL files locally into a directory of your choosing.   This folder should contain the following files:
+**2.1.** Download the necessary files to run ProGeM and place them ALL locally into a directory of your choosing.   Your directry should contain the following files:
 
 - **"ProGeM_settings.R"** (a series of ProGeM settings that require user input)
 - **"ProGeM_functions.R"** (a series of required functions)
