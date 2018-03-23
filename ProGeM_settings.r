@@ -115,7 +115,7 @@ tissues_of_interest <- GTEx_tissues[]     # default is all tissues.
 #------------------------------------------------------------------------------------------------------
 ## 4. EXECUTE ANNOTATION
 
-source(file = file.path(base_dir, "ProGeMM_functions.R"))			# provided.
-source(file = file.path(base_dir, "ProGeMM_commands.R"))	    # provided.
+source(file = file.path(base_dir, "ProGeM_functions.R"))			# provided.
+source(file = file.path(base_dir, "ProGeM_commands.R"))	    # provided.
 
 #######################################################################################################
