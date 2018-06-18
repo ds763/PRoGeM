@@ -27,7 +27,7 @@ proxy_data <- data.table(read.table(file = file.path(base_dir, proxy_filename), 
 if(filtering_required == TRUE) {
   proxy_data <- proxy_data[proxy_data$r2 >= r2_thresh,]
 }
-proxy_data <- proxy_data[-which(proxy_data$PROXY_rsID == proxy_data$LEAD_rsID),]
+proxy_data <- proxy_data[which(proxy_data$PROXY_rsID != proxy_data$LEAD_rsID),]
 
 
 # add a new column containing chromsome and position information in the format: "chr_position_" (this 

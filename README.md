@@ -79,7 +79,7 @@ MODIFIER_impact <- c("coding_sequence_variant", "mature_miRNA_variant", "5_prime
     
 ``` r
 source("https://bioconductor.org/biocLite.R")
-biocLite("GenomicAlignments", "GenomicFeatures", "GenomicRanges", "biomaRt")
+biocLite(c("GenomicAlignments", "GenomicFeatures", "GenomicRanges", "biomaRt"))
 install.packages("data.table")
 ```
 
