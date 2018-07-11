@@ -59,9 +59,9 @@ IMPACT_column <-
 r2_column <- NULL    # OPTIONAL: only required if your VEP output needs to be filtered based on r2_thresh
 
 # Tissue(s) of interest for GTEx eQTL data set:
-GTEx_tissues <- dir(eQTLdata_dir)[grep("nominal", dir(eQTLdata_dir))]     # variable contains filenames
-                                                                          # for all GTEx v7 tissues (n=44) 
-                                                                          # as per below.
+GTEx_tissues <- dir(eQTLdata_dir)[grep("signifpairs", dir(eQTLdata_dir))]     # variable contains filenames
+                                                                              # for all GTEx v7 tissues (n=44) 
+                                                                              # as per below.
 
 # [1] "Adipose_Subcutaneous.signifpairs.txt"                 
 # [2] "Adipose_Visceral_Omentum.signifpairs.txt"             
