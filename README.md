@@ -67,7 +67,7 @@ MODIFIER_impact <- c("coding_sequence_variant", "mature_miRNA_variant", "5_prime
 - **"GRCh37_genes.RData"** (a GRCh37 gene model based on a GTF file ["Homo_sapiens.GRCh37.82.gtf"] downloaded from ensembl)
 - **"annotated_metabolic_genes.RData"** (OPTIONAL: a list of GRanges objects containing so-called metabolic-related genes according to five open source databases - see further details below)
 
-**2.2.** Download a zipped folder containing cis-eQTL data (v6p) from the Genotype-Tissue Expression (GTEx) project: https://www.gtexportal.org/home/.  At this site click on the drop-down menu "Datasets" and then click on "Download" - you'll need to register for an account with GTEx first.  The name of the folder you need to download is "GTEx_Analysis_v6p_eQTL.tar" (728M), which contains eGene and significant SNP-gene associations based on permutations.  Unzip this folder and place ALL files locally in a directory of your choosing (preferably not the one containing the ProGeMM_*.R and .RData files from above).
+**2.2.** Download a zipped folder containing cis-eQTL data (v7) from the Genotype-Tissue Expression (GTEx) project: https://www.gtexportal.org/home/.  At this site click on the drop-down menu "Datasets" and then click on "Download" - you'll need to register for an account with GTEx first.  The name of the folder you need to download is "GTEx_Analysis_v7_eQTL.tar.gz" (728M), which contains eGene and significant SNP-gene associations based on permutations.  Unzip this folder and place ALL files locally in a directory of your choosing (preferably not the one containing the ProGeMM_*.R and .RData files from above).
 
 **2.3.** Finally, ensure you have downloaded the following R packages and dependencies:
 
