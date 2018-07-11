@@ -97,11 +97,11 @@ nearest_genes_selector <- function(local_gene_ranges, annotation, biotype, numbe
 
 
 cis_eQTL_target_finder <- function(dir, tissues, sentinels, proxies) {
-
+  
   sentinel_eQTL_hits <- NULL
   proxy_eQTL_hits <- NULL
   for(i in tissues) {
-    current_tissue <- unlist(strsplit(i[1], "_Analysis.nominal.filtered.txt"))
+    current_tissue <- unlist(strsplit(i[1], ".signifpairs.txt"))
     temp_tissue_data <- data.table(read.table(file = file.path(dir, i), header = TRUE, quote = NULL,
                                               sep = "\t", stringsAsFactors = FALSE))
     temp_search_terms <- gsub("^([^_]*_[^_]*_).*$", "\\1", temp_tissue_data$variant_id)
@@ -131,6 +131,7 @@ cis_eQTL_target_finder <- function(dir, tissues, sentinels, proxies) {
   }
   return(list(sentinel_eQTL_hits, proxy_eQTL_hits))
 }
+
    
 
 cis_eQTL_formatter <- function(sentinels, proxies, cis_eQTLs) {
